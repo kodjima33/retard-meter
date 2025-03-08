@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Retard Meter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Retard Meter</h1>
+      <div class="controls">
+        <button id="toggleRecording" class="recording-btn">Start Recording</button>
+        <!-- Device selector will be inserted here by JavaScript -->
+        <div id="status" class="status-indicator">Idle</div>
+      </div>
+    </header>
+    
+    <div class="transcript-container">
+      <div id="transcript" class="transcript"></div>
+    </div>
+    
+    <div class="info-panel">
+      <div class="info-item">
+        <h3>How it works</h3>
+        <p>This app captures system audio and transcribes speech in real-time.</p>
+        <p>Select your audio device from the dropdown menu, then click "Start Recording" to begin capturing and transcribing audio.</p>
+      </div>
+      <div class="info-item">
+        <h3>Device Selection</h3>
+        <p>To capture microphone audio: select your preferred microphone from the dropdown.</p>
+        <p>To capture system audio: install BlackHole audio driver (via <code>brew install blackhole-2ch</code>), set up multi-output in Audio MIDI Setup, and select "BlackHole 2ch" in the dropdown.</p>
+      </div>
+      <div class="info-item">
+        <h3>Requirements</h3>
+        <p>You need to:</p>
+        <ul>
+          <li>Grant microphone permissions</li>
+          <li>Install SoX (<code>brew install sox</code>)</li>
+          <li>Set up Google Speech API credentials</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <script src="renderer.js"></script>
+</body>
+</html> 

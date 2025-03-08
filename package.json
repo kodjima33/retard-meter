@@ -1,0 +1,36 @@
+{
+  "name": "retard-meter",
+  "version": "1.0.0",
+  "description": "A real-time speech transcription app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "setup": "node setup.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "speech-to-text",
+    "transcription",
+    "electron"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@deepgram/sdk": "^2.4.0",
+    "dotenv": "^16.0.3",
+    "electron-builder": "^23.6.0",
+    "node-audiorecorder": "^3.0.0",
+    "openai": "^4.28.0"
+  },
+  "devDependencies": {
+    "electron": "^25.0.0",
+    "electron-rebuild": "^3.2.9"
+  },
+  "build": {
+    "appId": "com.retardmeter.app",
+    "mac": {
+      "category": "public.app-category.utilities"
+    }
+  }
+}
