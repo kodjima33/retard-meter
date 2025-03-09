@@ -20,7 +20,7 @@ Before you can run this app, you'll need to:
    ```
    brew install sox
    ```
-3. Set up a Deepgram API key:
+3. Set up a Deepgram + openai API key:
    - Create a free account at [deepgram.com](https://deepgram.com)
    - Create a new project and generate an API key
    - Add your API key to the `.env` file or environment variables
